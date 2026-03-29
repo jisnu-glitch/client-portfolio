@@ -86,7 +86,7 @@ export default function ProjectsSection() {
   return (
     <section 
       id="projects" 
-      className="py-20 md:py-40 relative z-10 overflow-hidden bg-[#050505]"
+      className="pt-16 pb-20 md:py-40 relative z-10 overflow-hidden bg-[#050505]"
       style={{ background: 'linear-gradient(145deg, #050505 0%, #0a0c0a 50%, #121812 100%)' }}
     >
       <div className="absolute inset-0 opacity-[0.04] pointer-events-none" 
@@ -99,13 +99,12 @@ export default function ProjectsSection() {
           viewport={{ once: true }}
           className="mb-20 md:mb-32 flex flex-col md:flex-row md:items-end justify-between gap-8"
         >
-          <div className="overflow-visible"> 
-            {/* Updated Font: Archivo Black */}
-            <h2 className="text-[3rem] md:text-[5rem] lg:text-[5.5rem] tracking-tighter text-white leading-none mb-4 uppercase py-2" 
+          <div className="overflow-visible">
+            <h2 className="text-[3rem] md:text-[5.5rem] lg:text-[6.5rem] tracking-tighter text-white leading-[0.9] mb-6 uppercase" 
                 style={{ fontFamily: "'Archivo Black', sans-serif" }}>
-              MY <br /><span className="text-[#F97316]">PROJECTS</span>
+              MY <span className="text-[#F97316]">PROJECTS</span>
             </h2>
-            <div className="w-20 h-[1px] bg-[#F97316]" />
+            <div className="w-32 h-[1px] bg-[#F97316]" />
           </div>
           <p className="text-[#596345] font-mono tracking-[0.3em] uppercase text-[10px]">
             [ Technical Documentation // BIM Execution ]

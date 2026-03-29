@@ -60,7 +60,7 @@ export default function ExperienceSection() {
   return (
     <section 
       id="experience" 
-      className="py-40 relative z-10 overflow-hidden "
+      className="pt-16 pb-32 md:py-40 relative z-10 overflow-hidden "
       style={{ background: 'linear-gradient(145deg, #050505 0%, #0a0c0a 50%, #121812 100%)' }}
     >
       {/* Background Architectural Grid Overlay */}
@@ -70,14 +70,14 @@ export default function ExperienceSection() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 xl:gap-32 relative z-10">
         
         {/* --- LEFT COLUMN: Experience --- */}
-        <div className="relative pt-10 lg:pt-0">
+        <div className="relative">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="mb-20"
           >
-            <h2 className="text-[3rem] md:text-[5rem] lg:text-[5.5rem] xl:text-[5.5rem] tracking-tighter text-white leading-none mb-4" style={{ fontFamily: "'Archivo Black', sans-serif" }}>
+             <h2 className="text-[3rem] md:text-[5rem] lg:text-[5.5rem] xl:text-[5.5rem] tracking-tighter text-white leading-none mb-4" style={{ fontFamily: "'Archivo Black', sans-serif" }}>
               MY <br /> <span className="text-[#F97316]">EXPERIENCE</span>
             </h2>
             <p className="text-[#596345] font-mono tracking-[0.3em] uppercase text-[10px] md:text-xs italic">// Industrial Exposure</p>
@@ -102,7 +102,7 @@ export default function ExperienceSection() {
                   </div>
                 </div>
 
-                <div className="p-8 rounded-[2.5rem] bg-white/[0.01] border border-white/5 backdrop-blur-3xl group-hover:bg-white/[0.03] group-hover:border-white/10 transition-all duration-500">
+                <div className="p-8 rounded-[2.5rem] bg-white/[0.01] border border-white/5 backdrop-blur-md group-hover:bg-white/[0.03] group-hover:border-white/10 transition-all duration-500 will-change-transform">
                   <span className="inline-block px-3 py-1 rounded-full bg-[#F97316]/10 text-[#F97316] text-[10px] font-bold tracking-widest uppercase mb-4">
                     {exp.period}
                   </span>
@@ -131,7 +131,7 @@ export default function ExperienceSection() {
             viewport={{ once: true }}
             className="mb-20 lg:ml-20"
           >
-            <h2 className="text-[3rem] md:text-[5re m] lg:text-[5.5rem] xl:text-[5.5rem] tracking-tighter text-white leading-none mb-4" style={{ fontFamily: "'Archivo Black', sans-serif" }}>
+            <h2 className="text-[3rem] md:text-[5rem] lg:text-[5.5rem] xl:text-[5.5rem] tracking-tighter text-white leading-none mb-4" style={{ fontFamily: "'Archivo Black', sans-serif" }}>
               ACADEMIC <br /> <span className="text-[#F97316]">HISTORY</span>
             </h2>
             <p className="text-[#596345] font-mono tracking-[0.3em] uppercase text-[10px] md:text-xs italic">// Qualifications</p>
@@ -144,7 +144,7 @@ export default function ExperienceSection() {
                 initial={{ opacity: 0, scale: 0.98 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="group p-8 rounded-[2.5rem] bg-white/[0.01] border border-white/5 backdrop-blur-3xl flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-[#596345]/50 transition-all duration-500"
+                className="group p-8 rounded-[2.5rem] bg-white/[0.01] border border-white/5 backdrop-blur-md flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-[#596345]/50 transition-all duration-500 will-change-transform"
               >
                 <div>
                   <h3 className="text-xl font-bold text-white mb-1">{edu.level}</h3>

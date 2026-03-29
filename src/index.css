@@ -3,8 +3,19 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-slate-dark text-white font-outfit overflow-x-hidden;
+  html, body {
+    background-color: #050505;
+    @apply text-white font-outfit overflow-x-hidden;
+  }
+  
+  /* Disable focus rings that cause red glitches on section jumps */
+  *:focus {
+    outline: none !important;
+  }
+
+  /* Ensure smooth-scroll targets aren't covered by the navbar */
+  section {
+    scroll-margin-top: 100px;
   }
 }
 

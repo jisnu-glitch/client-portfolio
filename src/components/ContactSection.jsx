@@ -18,7 +18,7 @@ export default function ContactSection() {
   return (
     <section 
       id="contact" 
-      className="py-40 relative z-10 overflow-hidden" 
+      className="pt-16 pb-40 relative z-10 overflow-hidden" 
       style={{ background: 'linear-gradient(145deg, #050505 0%, #0a0c0a 50%, #121812 100%)' }}
     >
       {/* Background Architectural Grid */}
@@ -92,7 +92,7 @@ export default function ContactSection() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-8 bg-white/[0.01] border border-white/5 rounded-[3rem] p-8 md:p-16 backdrop-blur-3xl relative overflow-hidden"
+            className="lg:col-span-8 bg-white/[0.01] border border-white/5 rounded-[3rem] p-8 md:p-16 backdrop-blur-md relative overflow-hidden will-change-transform"
           >
             <form className="space-y-10 relative z-10" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

@@ -192,7 +192,7 @@ const HeroSection = () => {
               className="text-[#F97316] text-[12vw] sm:text-[11vw] md:text-[8rem] lg:text-[7.5rem] xl:text-[9.5rem] leading-none tracking-tighter drop-shadow-2xl"
               style={{ fontFamily: "'Archivo Black', sans-serif" }}
             >
-              ATHUL <span className="text-white/5" style={{ WebkitTextStroke: '2px rgba(255,255,255,0.3)', color: 'transparent' }}>VS</span>
+              ATHUL <span className="text-white/5" style={{ WebkitTextStroke: '2px rgba(255, 140, 0, 0.3)', color: 'transparent' }}>VS</span>
             </motion.h1>
           </div>
 
