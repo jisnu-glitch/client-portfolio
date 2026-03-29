@@ -28,7 +28,7 @@ const PROJECTS = [
     subtitle: 'Site Suitability for Construction',
     tools: ['Field Testing', 'Report'],
     description: 'Conducted tests to assess bearing capacity, analyzed characteristics, and presented a report recommending foundation types.',
-    image: 'https://images.unsplash.com/photo-1591586120033-01047648312e?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1669170941335-07ca7e9dcd73?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   }
 ];
 
