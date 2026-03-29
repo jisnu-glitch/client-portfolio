@@ -100,8 +100,8 @@ export default function AboutSection() {
         {/* Heading */}
         <motion.h2
           variants={itemVariants}
-          className="text-[#F97316] text-[15vw] sm:text-[12vw] md:text-[5.5rem] lg:text-[7rem] leading-[0.85] md:leading-[0.9] tracking-tighter mb-8 md:mb-10 drop-shadow-2xl"
-          style={{ fontFamily: 'Impact, sans-serif' }}
+          className="text-[#F97316] text-[12vw] sm:text-[10vw] md:text-[5rem] lg:text-[6rem] leading-none mb-8 md:mb-10 drop-shadow-2xl"
+          style={{ fontFamily: "'Archivo Black', sans-serif" }}
         >
           CAREER <br />
           <span className="text-white/10" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.2)', color: 'transparent' }}>OBJECTIVE</span>

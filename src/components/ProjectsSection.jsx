@@ -93,7 +93,7 @@ function ProjectCard({ project, idx }) {
           ))}
         </div>
 
-        <h3 className="text-4xl md:text-5xl  mb-4 text-white leading-[0.9] tracking-tighter group-hover:text-[#F97316] transition-colors duration-500" style={{ fontFamily: 'Impact, sans-serif' }}>
+        <h3 className="text-3xl md:text-4xl lg:text-[2.5rem] mb-4 text-white leading-none tracking-tighter group-hover:text-[#F97316] transition-colors duration-500" style={{ fontFamily: "'Archivo Black', sans-serif" }}>
           {project.title}
         </h3>
 
@@ -140,8 +140,8 @@ export default function ProjectsSection() {
           className="mb-32 flex flex-col md:flex-row md:items-end justify-between gap-8"
         >
           <div className=''> 
-            <h2 className="text-[4rem] md:text-[6rem] tracking-tighter text-white leading-none mb-4" style={{ fontFamily: 'Impact, sans-serif' }}>
-              MY <span className="text-[#F97316]">PROJECTS</span>
+            <h2 className="text-[3rem] md:text-[5rem] lg:text-[5.5rem] tracking-tighter text-white leading-none mb-4" style={{ fontFamily: "'Archivo Black', sans-serif" }}>
+              MY <br /> <span className="text-[#F97316]">PROJECTS</span>
             </h2>
             <div className="w-20 h-[1px] bg-[#F97316]" />
           </div>

@@ -37,8 +37,8 @@ export default function ContactSection() {
           <span className="absolute -top-10 left-0 text-[12vw] font-bold text-white/[0.02] uppercase tracking-tighter select-none pointer-events-none">
             Connect
           </span>
-          <h2 className="text-[4rem] md:text-[6rem] tracking-tighter text-white leading-none mb-4" style={{ fontFamily: 'Impact, sans-serif' }}>
-              GET IN  <span className="text-[#F97316]">TOUCH</span>
+          <h2 className="text-[3rem] md:text-[5rem] lg:text-[5.5rem] tracking-tighter text-white leading-none mb-4" style={{ fontFamily: "'Archivo Black', sans-serif" }}>
+              GET IN <br /><span className="text-[#F97316]">TOUCH</span>
             </h2>
           <p className="mt-8 text-[#596345] font-mono tracking-[0.3em] uppercase text-[10px] md:text-xs italic max-w-xl leading-relaxed">
             // Available for BIM coordination, structural design, and cinematic production inquiries.

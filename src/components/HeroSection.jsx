@@ -9,7 +9,9 @@ const HeroSection = () => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  const handleMouseMove = (e) => {
+  const handlePointerMove = (e) => {
+    // Only apply hover parallax for mouse. Mobile scroll should not trigger jiggery recalculations.
+    if (e.pointerType !== 'mouse') return;
     const { clientX, clientY } = e;
     const { innerWidth, innerHeight } = window;
     mouseX.set((clientX / innerWidth) - 0.5);
@@ -36,7 +38,7 @@ const HeroSection = () => {
   return (
     <section
       ref={containerRef}
-      onMouseMove={handleMouseMove}
+      onPointerMove={handlePointerMove}
       className="relative w-full min-h-screen overflow-hidden flex flex-col md:flex-row items-center justify-center md:justify-end"
       // SECTION GRADIENT: Midnight Obsidian to Deep Forest Moss
       style={{ background: 'linear-gradient(145deg, #050505 0%, #0a0c0a 50%, #121812 100%)' }}
@@ -99,7 +101,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -20 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:hidden absolute top-[90px] left-4 right-4 bg-[#050505]/70 border border-white/10 backdrop-blur-3xl flex flex-col z-50 rounded-3xl overflow-hidden shadow-[0_30px_60px_rgba(249,115,22,0.1)]"
+            className="lg:hidden absolute top-[90px] left-4 right-4 bg-[#0a0c0a]/95 border border-[#F97316]/20 backdrop-blur-md flex flex-col z-50 rounded-2xl overflow-hidden shadow-2xl will-change-transform"
           >
             {['About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item, idx) => (
               <motion.a 
@@ -177,20 +179,20 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 0.03, x: 0 }}
             transition={{ duration: 2, delay: 0.8 }}
-            className="hidden lg:block absolute -top-16 md:-top-24 right-0 text-[18vw] font-bold text-white select-none pointer-events-none"
-            style={{ WebkitTextStroke: '1px white', color: 'transparent', fontFamily: 'Impact' }}
+            className="hidden lg:block absolute -top-16 md:-top-24 right-0 text-[14vw] font-bold text-white select-none pointer-events-none"
+            style={{ WebkitTextStroke: '1px white', color: 'transparent', fontFamily: "'Archivo Black', sans-serif" }}
           >
             ARCHITECT
           </motion.h2>
 
-          {/* Main Title */}
-          <div className="overflow-hidden mb-4">
+          {/* Main Title - Cleaned Spacing */}
+          <div className="overflow-visible py-2"> 
             <motion.h1
               variants={nameVariants}
-              className="text-[#F97316] text-[16vw] sm:text-[14vw] md:text-[8rem] lg:text-[10rem] xl:text-[13rem] leading-[0.85] tracking-tighter drop-shadow-[0_20px_50px_rgba(0,0,0,0.8)]"
-              style={{ fontFamily: 'Impact, sans-serif' }}
+              className="text-[#F97316] text-[12vw] sm:text-[11vw] md:text-[8rem] lg:text-[7.5rem] xl:text-[9.5rem] leading-none tracking-tighter drop-shadow-2xl"
+              style={{ fontFamily: "'Archivo Black', sans-serif" }}
             >
-              ATHUL   <span className="text-white/5" style={{ WebkitTextStroke: '4px rgba(255, 123, 0, 0.2)', color: 'transparent' }}>VS</span>
+              ATHUL <span className="text-white/5" style={{ WebkitTextStroke: '2px rgba(255,255,255,0.3)', color: 'transparent' }}>VS</span>
             </motion.h1>
           </div>
 

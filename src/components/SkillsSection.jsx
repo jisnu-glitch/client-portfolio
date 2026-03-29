@@ -78,8 +78,8 @@ export default function SkillsSection() {
           viewport={{ once: true }}
           className="mb-20 text-center md:text-left"
         >
-          <h2 className="text-[3.5rem] md:text-[6rem] tracking-tighter text-white leading-none mb-4" 
-              style={{ fontFamily: 'Impact, sans-serif' }}>
+          <h2 className="text-[2.8rem] md:text-[5rem] lg:text-[5.5rem] tracking-tighter text-white leading-none mb-4" 
+              style={{ fontFamily: "'Archivo Black', sans-serif" }}>
             TECHNICAL <br className="md:hidden" /> <span className="text-[#F97316]">SKILLS</span>
           </h2>
           <p className="text-[#596345] font-mono tracking-[0.3em] uppercase text-xs">Engineered Precision • Creative Vision</p>

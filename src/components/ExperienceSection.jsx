@@ -60,25 +60,25 @@ export default function ExperienceSection() {
   return (
     <section 
       id="experience" 
-      className="py-40 relative z-10 overflow-hidden"
+      className="py-40 relative z-10 overflow-hidden "
       style={{ background: 'linear-gradient(145deg, #050505 0%, #0a0c0a 50%, #121812 100%)' }}
     >
       {/* Background Architectural Grid Overlay */}
       <div className="absolute inset-0 opacity-[0.04] pointer-events-none z-0" 
            style={{ backgroundImage: `linear-gradient(#F97316 1px, transparent 1px), linear-gradient(90deg, #F97316 1px, transparent 1px)`, backgroundSize: '100px 100px' }} />
 
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 xl:gap-32 relative z-10">
         
         {/* --- LEFT COLUMN: Experience --- */}
-        <div className="relative">
+        <div className="relative pt-10 lg:pt-0">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="mb-20"
           >
-            <h2 className="text-[4rem] md:text-[6rem] tracking-tighter text-white leading-none mb-4" style={{ fontFamily: 'Impact, sans-serif' }}>
-              PROFESSIONAL <br /> <span className="text-[#F97316]">TRACK</span>
+            <h2 className="text-[3rem] md:text-[5rem] lg:text-[5.5rem] xl:text-[5.5rem] tracking-tighter text-white leading-none mb-4" style={{ fontFamily: "'Archivo Black', sans-serif" }}>
+              MY <br /> <span className="text-[#F97316]">EXPERIENCE</span>
             </h2>
             <p className="text-[#596345] font-mono tracking-[0.3em] uppercase text-[10px] md:text-xs italic">// Industrial Exposure</p>
           </motion.div>
@@ -131,7 +131,7 @@ export default function ExperienceSection() {
             viewport={{ once: true }}
             className="mb-20 lg:ml-20"
           >
-            <h2 className="text-[4rem] md:text-[6rem] tracking-tighter text-white leading-none mb-4" style={{ fontFamily: 'Impact, sans-serif' }}>
+            <h2 className="text-[3rem] md:text-[5re m] lg:text-[5.5rem] xl:text-[5.5rem] tracking-tighter text-white leading-none mb-4" style={{ fontFamily: "'Archivo Black', sans-serif" }}>
               ACADEMIC <br /> <span className="text-[#F97316]">HISTORY</span>
             </h2>
             <p className="text-[#596345] font-mono tracking-[0.3em] uppercase text-[10px] md:text-xs italic">// Qualifications</p>
