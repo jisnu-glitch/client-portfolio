@@ -5,7 +5,7 @@ const SKILLS = [
   { 
     name: 'AutoCAD', 
     desc: '2D Drafting & Design', 
-    percent: 90, 
+    
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M2 22L22 2M2 2h20v20H2V2z M7 7l10 10M17 7L7 17" strokeLinecap="round" strokeLinejoin="round" />
@@ -15,7 +15,7 @@ const SKILLS = [
   { 
     name: 'Revit', 
     desc: 'BIM Modelling & 3D Design', 
-    percent: 85, 
+    
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M3 21h18M3 10h18M3 7l9-4 9 4v14H3V7z M9 21V10M15 21V10" strokeLinecap="round" strokeLinejoin="round" />
@@ -25,7 +25,7 @@ const SKILLS = [
   { 
     name: 'Creative Suite', 
     desc: 'Photoshop & Lightroom', 
-    percent: 80, 
+     
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" strokeLinecap="round" strokeLinejoin="round" />
@@ -35,7 +35,7 @@ const SKILLS = [
   { 
     name: 'Construction', 
     desc: 'Methods & Estimation', 
-    percent: 75, 
+    
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M12 3v18M3 12h18M4.5 4.5l15 15M19.5 4.5l-15 15" strokeLinecap="round" strokeLinejoin="round" />
@@ -45,7 +45,7 @@ const SKILLS = [
   { 
     name: 'Site Ops', 
     desc: 'Earthwork & Operations', 
-    percent: 70, 
+    
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M2 20h20M5 20V8l7-4 7 4v12M9 20v-4h6v4" strokeLinecap="round" strokeLinejoin="round" />
@@ -96,22 +96,7 @@ export default function SkillsSection() {
               transition={{ delay: index * 0.1 }}
               className="group relative p-8 rounded-[2.5rem] bg-white/[0.01] border border-white/5 backdrop-blur-3xl overflow-hidden transition-all duration-500 hover:border-white/20"
             >
-              <div className="absolute top-6 right-6 w-12 h-12">
-                <svg className="w-full h-full transform -rotate-90">
-                  <circle cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="2" fill="transparent" className="text-white/5" />
-                  <motion.circle
-                    cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="2" fill="transparent"
-                    strokeDasharray="125.6"
-                    initial={{ strokeDashoffset: 125.6 }}
-                    whileInView={{ strokeDashoffset: 125.6 - (125.6 * skill.percent) / 100 }}
-                    transition={{ duration: 2, ease: "easeOut" }}
-                    className="text-[#F97316]"
-                  />
-                </svg>
-                <span className="absolute inset-0 flex items-center justify-center text-[10px] font-mono text-[#F97316]">
-                  {skill.percent}%
-                </span>
-              </div>
+              
 
               {/* Updated Icon Container */}
               <div className="w-12 h-12 mb-8 text-[#596345] group-hover:text-[#F97316] transition-colors duration-500">
@@ -122,12 +107,6 @@ export default function SkillsSection() {
               <p className="text-[#E5E7EB]/40 text-sm font-light leading-relaxed mb-6 italic">
                 {skill.desc}
               </p>
-
-              <div className="flex gap-1.5">
-                {[...Array(5)].map((_, i) => (
-                  <div key={i} className={`h-1 flex-1 rounded-full transition-all duration-700 ${i < Math.round(skill.percent / 20) ? 'bg-[#F97316]' : 'bg-white/5'}`} />
-                ))}
-              </div>
 
               <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-[#F97316]/5 blur-[50px] group-hover:bg-[#F97316]/10 transition-all duration-500" />
             </motion.div>
