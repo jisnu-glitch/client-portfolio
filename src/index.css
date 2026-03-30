@@ -4,10 +4,15 @@
 
 @layer base {
   html, body {
+    position: relative;
     background-color: #050505;
     @apply text-white font-outfit overflow-x-hidden;
   }
-  
+  /* Ensure all major layout containers have a positioning context for Framer Motion */
+  main, section, article, header, footer {
+    position: relative;
+  }
+
   /* Disable focus rings that cause red glitches on section jumps */
   *:focus {
     outline: none !important;

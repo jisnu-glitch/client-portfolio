@@ -21,7 +21,7 @@ const Navbar = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden lg:flex items-center gap-10 bg-white/[0.03] border border-white/10 backdrop-blur-2xl px-12 py-4 rounded-full shadow-2xl">
+        <div className="hidden lg:flex items-center gap-10 bg-white/[0.03] border border-white/10 backdrop-blur-md px-12 py-4 rounded-full shadow-2xl">
           {['About', 'Skills', 'Projects', 'Experience'].map((item, idx) => (
             <a 
               key={idx} 
@@ -45,7 +45,7 @@ const Navbar = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
           {/* Mobile Menu Toggle */}
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden px-6 py-3 border border-white/10 rounded-full backdrop-blur-2xl text-white/90 hover: transition-all flex items-center gap-3 active:scale-95"
+            className="lg:hidden px-6 py-3 border border-white/10 rounded-full backdrop-blur-md text-white/90 hover: transition-all flex items-center gap-3 active:scale-95 will-change-transform"
           >
             <span className="text-[10px] font-mono tracking-widest uppercase">{isMobileMenuOpen ? 'CLOSE' : 'MENU'}</span>
             <div className="flex flex-col gap-1 w-4">
@@ -65,7 +65,7 @@ const Navbar = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
             animate={{ opacity: 1, clipPath: 'inset(0% 0% 0% 0%)' }}
             exit={{ opacity: 0, clipPath: 'inset(0% 0% 100% 0%)' }}
             transition={transition}
-            className="lg:hidden fixed inset-0 bg-[#050505]/95 backdrop-blur-2xl z-[90] flex flex-col justify-center items-center"
+            className="lg:hidden fixed inset-0 bg-[#050505]/95 backdrop-blur-md z-[90] flex flex-col justify-center items-center will-change-transform"
           >
             <div className="flex flex-col items-center gap-8">
               {['About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item, idx) => (

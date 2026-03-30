@@ -104,8 +104,8 @@ export default function SkillsSection() {
               className="group relative"
             >
               {/* Card Container with Notched Corner */}
-              <div 
-                className="relative p-8 bg-white/[0.01] border-l border-b border-white/10 backdrop-blur-3xl overflow-hidden transition-all duration-500 group-hover:bg-white/[0.03] group-hover:border-[#F97316]/50 min-h-[380px] flex flex-col"
+            <div 
+                className="relative p-8 bg-white/[0.01] border-l border-b border-white/10 backdrop-blur-md overflow-hidden transition-all duration-500 group-hover:bg-white/[0.03] group-hover:border-[#F97316]/50 min-h-[380px] flex flex-col will-change-transform"
                 style={{ clipPath: 'polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%)' }}
               >
                 {/* ID Counter */}
@@ -154,7 +154,7 @@ export default function SkillsSection() {
             className="group relative lg:col-span-1"
           >
             <div 
-              className="relative p-8 bg-gradient-to-br from-[#F97316]/10 to-transparent border border-[#F97316]/20 backdrop-blur-3xl min-h-[380px] flex flex-col"
+              className="relative p-8 bg-gradient-to-br from-[#F97316]/10 to-transparent border border-[#F97316]/20 backdrop-blur-md min-h-[380px] flex flex-col will-change-transform"
               style={{ clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 15%)' }}
             >
               <div className="flex items-center gap-3 mb-8">

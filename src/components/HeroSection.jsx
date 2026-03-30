@@ -58,11 +58,8 @@ const HeroSection = () => {
        {/* --- LAYER 1: Parallax Image with Deep Green-Black Fade --- */}
 
       <motion.div
-
         style={{ x: imageMoveX, y: imageMoveY }}
-
-        className="absolute inset-0 md:inset-auto md:left-0 md:top-0 w-full md:w-[60%] h-full z-10 select-none pointer-events-none"
-
+        className="absolute inset-0 md:inset-auto md:left-0 md:top-0 w-full md:w-[60%] h-full z-10 select-none pointer-events-none will-change-transform"
       >
 
         <div

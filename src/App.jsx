@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="relative bg-[#050505] text-white selection:bg-white/20 selection:text-[#F97316] ">
       {/* Main Content Sections */}
-      <main>
+      <main className="relative">
         <HeroSection />
         <AboutSection />
         <SkillsSection />

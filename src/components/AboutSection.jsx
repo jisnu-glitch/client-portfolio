@@ -108,7 +108,10 @@ export default function AboutSection() {
         </motion.h2>
 
         {/* Body Text */}
-        <motion.div variants={itemVariants} className="relative group max-w-sm sm:max-w-md md:max-w-lg">
+        <motion.div 
+          variants={itemVariants} 
+          className="relative group max-w-sm sm:max-w-md md:max-w-lg will-change-transform"
+        >
           {/* Vertical line hidden on mobile for cleaner look */}
           <div className="absolute -left-6 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#F97316] to-transparent hidden md:block" />
           
@@ -129,7 +132,7 @@ export default function AboutSection() {
           variants={itemVariants}
           whileHover={{ x: 10 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-10 md:mt-12 flex w-fit items-center gap-4 text-white text-[4rem]font-mono text-[10px] md:text-sm tracking-widest group border border-white/5 py-3 px-6 rounded-full bg-white/5 md:bg-transparent md:border-none md:p-0"
+          className="mt-10 md:mt-12 flex w-fit items-center gap-4 text-white font-mono text-[10px] md:text-sm tracking-widest group border border-white/5 py-3 px-6 rounded-full bg-white/5 md:bg-transparent md:border-none md:p-0 will-change-transform"
         >
           VIEW MY RESUME
           <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#F97316] transition-colors ">
