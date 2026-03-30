@@ -8,7 +8,7 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 function App() {
   return (
-    <div className="bg-[#050505] text-white selection:bg-white/20 selection:text-[#F97316]">
+    <div className="relative bg-[#050505] text-white selection:bg-white/20 selection:text-[#F97316] ">
       {/* Main Content Sections */}
       <main>
         <HeroSection />

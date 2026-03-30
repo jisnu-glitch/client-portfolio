@@ -113,7 +113,7 @@ export default function AboutSection() {
           <div className="absolute -left-6 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#F97316] to-transparent hidden md:block" />
           
           <p className="font-light text-[#E5E7EB] text-base md:text-xl lg:text-[1.3rem] leading-relaxed">
-            A motivated and detail-oriented <span className="text-[#F97316] font-medium italic underline decoration-[#596345] underline-offset-4">Civil Engineering student </span>seeking to apply technical knowledge in a professional construction environment. 
+            A motivated and detail-oriented <span className="text-[#F97316] font-medium italic">Civil Engineering student</span> seeking to apply technical knowledge in a professional construction environment. 
           </p>
           
           <p className="mt-4 md:mt-6 font-light text-[#E5E7EB]/70 text-base md:text-xl lg:text-[1.3rem] leading-relaxed">
@@ -129,10 +129,10 @@ export default function AboutSection() {
           variants={itemVariants}
           whileHover={{ x: 10 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-10 md:mt-12 flex w-fit items-center gap-4 text-white font-mono text-[10px] md:text-sm tracking-widest group border border-white/5 py-3 px-6 rounded-full bg-white/5 md:bg-transparent md:border-none md:p-0"
+          className="mt-10 md:mt-12 flex w-fit items-center gap-4 text-white text-[4rem]font-mono text-[10px] md:text-sm tracking-widest group border border-white/5 py-3 px-6 rounded-full bg-white/5 md:bg-transparent md:border-none md:p-0"
         >
           VIEW MY RESUME
-          <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#F97316] transition-colors">
+          <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#F97316] transition-colors ">
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="group-hover:text-[#F97316] transition-colors">
               <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
