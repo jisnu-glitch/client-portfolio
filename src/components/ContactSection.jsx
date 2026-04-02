@@ -73,18 +73,7 @@ export default function ContactSection() {
               </motion.div>
             ))}
 
-            <motion.div variants={itemVariants} className="pt-10 border-t border-white/5">
-              <motion.a 
-                href="https://linkedin.com/in/athul-v-s" 
-                target="_blank" 
-                className="inline-flex items-center gap-6 group"
-              >
-                <span className="text-white font-mono text-xs tracking-widest uppercase">LinkedIn // Dossier</span>
-                <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#F97316] group-hover:text-black transition-all">
-                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /></svg>
-                </div>
-              </motion.a>
-            </motion.div>
+            
           </motion.div>
 
           {/* --- CONTACT FORM (Right) --- */}
