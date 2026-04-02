@@ -3,13 +3,20 @@
 @tailwind utilities;
 
 @layer base {
-  html, body {
+
+  html,
+  body {
     position: relative;
     background-color: #050505;
     @apply text-white font-outfit overflow-x-hidden;
   }
+
   /* Ensure all major layout containers have a positioning context for Framer Motion */
-  main, section, article, header, footer {
+  main,
+  section,
+  article,
+  header,
+  footer {
     position: relative;
   }
 
@@ -31,15 +38,16 @@ html {
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
-  background: #0C0C0E; 
+  background: #0C0C0E;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #2C2C2C; 
+  background: #2C2C2C;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #EE7828; 
+  background: #EE7828;
 }
-
-

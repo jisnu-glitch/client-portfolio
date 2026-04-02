@@ -8,6 +8,7 @@ const PROJECTS = [
     tools: ['Autodesk Revit', 'BIM'],
     description: 'Recreated a detailed 3D BIM model of the Dillon House, producing comprehensive drawings aligned with international standards.',
     image: 'https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop',
+    link: 'https://drive.google.com/file/d/1lSqzx0pitQXg2EDVNTENJ9kBL1gQXQTO/view?usp=drive_link', // Paste your link here
   },
   {
     title: 'Residential Building Design',
@@ -15,6 +16,7 @@ const PROJECTS = [
     tools: ['Autodesk Revit', 'Landscaping'],
     description: 'Developed a complete BIM model including professional construction sheet sets (plans, elevations) and detailed interior elements.',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop',
+    link: 'https://drive.google.com/file/d/1n78sRmt7n5cJvarvEGmn2HLCdAV-YLKC/view?usp=drive_link', // Paste your link here
   },
   {
     title: 'AutoCAD Residential Building',
@@ -22,24 +24,21 @@ const PROJECTS = [
     tools: ['AutoCAD', 'Bye-laws'],
     description: 'Prepared complete 2D floor plans, elevations, and sections, applying standard conventions and building bye-laws for precise drafting.',
     image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1000&auto=format&fit=crop',
+    link: 'https://drive.google.com/drive/folders/1li90-PhfrTx5nQWmiCaSvdtS9Q82QImu?usp=drive_link', // Paste your link here
   },
-  {
-    title: 'Soil Investigation Analysis',
-    subtitle: 'Site Suitability for Construction',
-    tools: ['Field Testing', 'Report'],
-    description: 'Conducted tests to assess bearing capacity, analyzed characteristics, and presented a report recommending foundation types.',
-    image: 'https://images.unsplash.com/photo-1669170941335-07ca7e9dcd73?q=80&w=688&auto=format&fit=crop',
-  }
 ];
 
 function ProjectCard({ project, idx }) {
   return (
-    <motion.div
+    <motion.a
+      href={project.link || "#"}
+      target="_blank"
+      rel="noopener noreferrer"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ delay: idx * 0.1, duration: 0.8 }}
-      className={`group relative h-[500px] md:h-[650px] w-full bg-white/[0.02] backdrop-blur-sm overflow-hidden rounded-[2.5rem] md:rounded-[3.5rem] border border-white/5 shadow-2xl ${idx % 2 === 1 ? 'md:mt-28' : ''}`}
+      className={`block group relative h-[500px] md:h-[650px] w-full bg-white/[0.02] backdrop-blur-sm overflow-hidden rounded-[2.5rem] md:rounded-[3.5rem] border border-white/5 shadow-2xl ${idx === 1 ? 'md:mt-28 lg:mt-20' : ''} ${idx === 2 ? 'md:col-span-2 md:w-[calc(50%-2.5rem)] md:mx-auto lg:col-span-1 lg:w-full lg:mx-0 lg:mt-40' : ''}`}
     >
       <div className="absolute inset-0 z-0">
         <img 
@@ -78,7 +77,7 @@ function ProjectCard({ project, idx }) {
             </div>
         </div>
       </div>
-    </motion.div>
+    </motion.a>
   );
 }
 
@@ -111,7 +110,7 @@ export default function ProjectsSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-20 lg:gap-12">
           {PROJECTS.map((project, idx) => (
             <ProjectCard key={project.title} project={project} idx={idx} />
           ))}
